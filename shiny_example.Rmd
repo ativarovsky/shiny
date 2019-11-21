@@ -1,0 +1,27 @@
+---
+title: "Shiny"
+author: "Alice Tivarovsky"
+date: "11/21/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+```
+
+## Slides
+
+Shiny = framework for building interactive plots and web apps in R. 
+Quick example: 
+
+```{r}
+#shiny::runExample("01_hello")
+```
+
+You can put all kinds of widgets (sliders, checkboxes, text inputs.) We're going to embed shiny into a dashboard. 
+
+Sharing: 
+Shiny might be difficult to share if the end user isn't running in the background. So either: 
+* create shiny apps for yourself
